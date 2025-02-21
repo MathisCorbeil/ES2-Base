@@ -20,8 +20,9 @@ public class ControleSousmarin : MonoBehaviour
 
     void OnAvant(InputValue directionBase)
     {
-        Vector3 directionAvecVitesse = directionBase.Get<Vector3>() * _vitessePromenade;
-        directionInput = new Vector3(0f, 0f, directionAvecVitesse.z);
+        float directionAvecVitesse = directionBase.Get<float>() * _vitessePromenade;
+        directionInput = new Vector3(0f, 0f, directionAvecVitesse);
+        
 
     }
 
