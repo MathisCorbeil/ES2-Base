@@ -43,11 +43,7 @@ public class ControleSousmarin : MonoBehaviour
         
         directionInput = new Vector3(0f, directionAvecVitesse, 0f);
       
-        if(directionAvecVitesse < 0f)
-        {
-            _animator.SetBool("revers", true);
-
-        }
+        
         
             _animator.SetFloat("Deplacement_Verticale", directionInput.magnitude);
        
