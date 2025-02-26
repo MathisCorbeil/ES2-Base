@@ -9,7 +9,6 @@ public class ControleSousmarin : MonoBehaviour
     private Rigidbody _rb;
     private Vector3 directionInput;
     private Animator _animator;
- 
     // Start is called before the first frame update
 
 
@@ -73,15 +72,15 @@ public class ControleSousmarin : MonoBehaviour
     void OnBoost(InputValue etatBouton){
     if(etatBouton.isPressed){
     Debug.Log("patate");
-            _vitessePromenade = _vitessePromenade * 2;
+          _vitessePromenade=_vitessePromenade * 2;
+          
 
-            
             
         }
       else
         {
             Debug.Log("patate_piler");
-           _vitessePromenade = _vitessePromenade/2;
+            _vitessePromenade = _vitessePromenade/2;
            
 
         }
@@ -89,12 +88,8 @@ public class ControleSousmarin : MonoBehaviour
 
 void FixedUpdate()
     {
-
-      
-        Vector3 mouvement = directionInput;
+        Vector3 mouvement = directionInput * _vitessePromenade;
         _rb.AddForce(mouvement, ForceMode.VelocityChange);
-
-        
     }
 
 
