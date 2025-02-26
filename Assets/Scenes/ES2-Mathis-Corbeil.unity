@@ -1729,6 +1729,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4027833008474733190, guid: 20c0aa25022fd474ebac164d517acaa3,
+        type: 3}
+      propertyPath: m_Bones.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4027833008474733190, guid: 20c0aa25022fd474ebac164d517acaa3,
+        type: 3}
+      propertyPath: m_Bones.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8298684462619277302, guid: 20c0aa25022fd474ebac164d517acaa3,
         type: 3}
       propertyPath: m_Name
@@ -1823,7 +1833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1573a96c0014094ebb76c7d08c1c3c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _vitessePromenade: 5
+  _vitessePromenade: 1
 --- !u!114 &8632670369948054856
 MonoBehaviour:
   m_ObjectHideFlags: 0
