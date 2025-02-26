@@ -36,6 +36,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 4
     m_ConditionEvent: Deplacement_Verticale
     m_EventTreshold: 0.01
+  - m_ConditionMode: 3
+    m_ConditionEvent: Deplacement_Verticale
+    m_EventTreshold: 0.01
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4530853585351401469}
   m_Solo: 0
@@ -135,9 +138,12 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
+  - m_ConditionMode: 3
+    m_ConditionEvent: Deplacement_Verticale
+    m_EventTreshold: 0.01
   - m_ConditionMode: 4
-    m_ConditionEvent: Deplacement_Avant
-    m_EventTreshold: 1
+    m_ConditionEvent: Deplacement_Verticale
+    m_EventTreshold: 0.01
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7956165802226465761}
   m_Solo: 0
@@ -162,7 +168,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: Deplacement_Verticale
-    m_EventTreshold: 0
+    m_EventTreshold: -2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5051489969301890716}
   m_Solo: 0
@@ -245,9 +251,9 @@ AnimatorState:
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
-  m_Mirror: 1
+  m_Mirror: 0
   m_SpeedParameterActive: 1
-  m_MirrorParameterActive: 1
+  m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: a9613fcbf298b3b4c875e8bb8f1fdb5b, type: 2}
@@ -323,13 +329,13 @@ AnimatorState:
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
   m_Mirror: 1
-  m_SpeedParameterActive: 0
+  m_SpeedParameterActive: 1
   m_MirrorParameterActive: 1
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: be7987eea35fd994d83c1bcd4693355d, type: 2}
   m_Tag: 
-  m_SpeedParameter: 
+  m_SpeedParameter: Deplacement_Verticale
   m_MirrorParameter: revers
   m_CycleOffsetParameter: 
   m_TimeParameter: 
@@ -445,7 +451,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: Deplacement_Avant
-    m_EventTreshold: 0
+    m_EventTreshold: -2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 424515188680556810}
   m_Solo: 0
